@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+
+
+
+        <div class="form__container">
+            <h1 class="heading">Create new task</h1>
+            <div class="group">
+
+
+                <label for="title" class="group">
+                    <h5 class="input__heading">TASK TITLE</h5>
+                    <input id="title" type="text" class="input" placeholder="">
+                    <span class="validation" id="validation--input">This input can't be empty</span>
+                </label>
+            </div>
+
+            <div class="group">
+
+                <label for="description" class="group">
+                    <h5 class="input__heading">TASK DESCRIPTION</h5>
+                    <textarea name="" id="description" class="input input--content"></textarea>
+
+                    <span class="validation" id="validation--area">This area can't be empty</span>
+                </label>
+            </div>
+
+
+            <div class="group">
+
+                <label for="date" class="group">
+                    <h5 class="input__heading">FINAL TERM</h5>
+                    <input class="input input--date" type="date" id="date">
+                    <i class="far fa-calendar-alt icon__date"></i>
+                    <span class="validation" id="validation--date">This input can't be empty</span>
+                </label>
+            </div>
+
+
+
+
+
+            <div class="group group--category">
+                <h5 class="input__heading">CATEGORY</h5>
+                <div class=" group group--categories">
+                    <label for="home"><input type="radio" name="category" id="home" class="radio--none"><span
+                            class="styled-radio">Home</span> </label>
+                    <label for="study"><input type="radio" name="category" id="study" class="radio--none"> <span
+                            class="styled-radio">Study</span> </label>
+                    <label for="work"><input type="radio" name="category" id="work" class="radio--none"> <span
+                            class="styled-radio">Work</span> </label>
+                    <label for="shopping"><input type="radio" name="category" id="shopping" class="radio--none">
+                        <span class="styled-radio">Shopping</span> </label>
+
+                </div>
+                <span class="validation" id="validation--radio">Choose category</span>
+            </div>
+
+            <button class="button button__create">Create Task</button>
+
+        </div>
+        <div class="tasks">
+
+            <label class="categories-label" for="cars">
+                <h1>Select category</h1>
+            </label>
+            <select name="categories-select">
+                <!-- <option value="all">All </option> -->
+                <option value="home">Home</option>
+                <option value="study">Study </option>
+                <option value="work">Work</option>
+                <option value="shopping">Shopping</option>
+                <option value="done">Done</option>
+                <option value="uncomplete">Uncomplete</option>
+            </select>
+            <h2 class="heading heading__list">Task you recently added</h2>
+
+
+            <ul class="tasks-container group">
+
+                <!-- <li class="task group" data-key="0">
+                    <h2 class="task__heading">Task Title</h2>
+                    <p class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                        voluptatem
+                        consectetur modi dicta eligendi at sed sit eum nesciunt excepturi ea, fugiat explicabo in ipsam,
+                        perferendis suscipit ad exercitationem laboriosam.</p>
+                    <div class="group group--task">
+                        <div class="task__info-container">
+                            <h5 class="task__info-heading ">Category: </h5>
+                            <span class="task__category-item"> study</span>
+                        </div>
+                        <div class="task__info-container">
+                            <h5 class="task__info-heading">Final Term:</h5>
+                            <span class="task__term-item">2020-07-23</span>
+                        </div>
+                    </div>
+                    <div class="task__group">
+                        <button class="button button__task button__task-finished" data-status="true"><i
+                                class="fas fa-check icon--sm"></i>
+                        </button>
+                        <button class="button button__task button__task-unfinished" data-status="false"><i
+                                class="fas fa-times icon--sm"></i></button>
+                        <button class="button button__task button__task-delete"><i
+                                class="fas fa-trash-alt icon--sm"></i>
+                        </button></div>
+                </li> -->
+                <li class="task group" style="border: none">There is nothing to see</li>
+
+                <!-- <li class="task group" style="border: none">--Nothing to do--</li> -->
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
